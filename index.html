@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eungi</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="resources/eungihong.jpg">
+            <h1>Eun Gi Hong</h1>
+            <nav>
+                <ul>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#extra-curricular">Extra-Curricular Activities</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <section id="education">
+            <h2>Education</h2>
+            <p class="cambridge-years">2017-2020</p>
+            <p class="cambridge">BA(Hons) in Land Economy, University of Cambridge, England</p>
+            <p class="abbey-years">2015-2017</p>
+            <p class="abbey">Secondary Education Exam: A level, Abbey College Cambridge, England</p>
+            <p class="foundation-years">2014-2015</p>
+            <p class="foundation">Foundation Program: NCUK, IEN Institute Seoul, South Korea</p>
+            <p class="kor-high-years">2012-2013</p>
+            <p class="kor-high">High School Graduation Equivalency Examination, Seoul Metropolitan Office of Education, South Korea</p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <h4>Planning Assistant</h4>
+            <h4 class="exp-duration">July 2018 to September 2018</h4>
+            <h4>ID Construction Ltd <span class="location">- Hanam-si, Gyeonggi-do</span></h4>
+            <ul>
+                <li>Conducted research and analysis to estimate the profitability of a factory construction in Hwaseong-si based on the request of landowner</li>
+                <li>With the help of local real estate agency partners my team estimated the market price of other land in the vicinity</li>
+                <li>Worked out the present value of the factory that can be constructed with annual interest rate at that time and thus evaluate the net present value which turned out to be negative</li>
+                <li>Whilst measuring present value of the factory, my team considered various aspects including the potentiality of the related industries, competitiveness of and accessibility to the region, and the switchability of the use of the factory, from which I learnt how to approximate and quantify those factors</li>
+                <li>Considered local regulation – for a factory to be constructed enough entrance road (at least two lines of roads for cars) width should exist where only one line was there and thus entrance should be expanded to some extent which incurs significant costs</li>
+                <li>Monitored multiple databases(other factory prices in the vicinity, the number of newly built factories in the region to assess demand level etc.) to correctly calculate land price and predict present value of the factory that will be constructed</li>
+            </ul>
+        </section>
+
+        <section id="extra-curricular">
+            <h2>Extra-Curricular Activities</h2>
+            <ul>
+                <li>Participated £2k Business Canvas Competition held by Cambridge University Entrepreneurs (CUE) with my own business idea and received mentoring from a US consultant in field regarding my idea</li>
+ 	            <li>Participated Cambridge University Real Estate Case Competition 2018 held by Cambridge University Real Estate Finance & Investment Society (CUREFIS) where my team valued an American real estate project</li>
+                <li>Joined college badminton team</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Training and development – Tutoring experience</li>
+ 	            <li>Microsoft Office – proficient user of Word, Excel, PowerPoint</li>
+                <li>Computer Programming– novice user of C language</li>
+                <li>Quick learner</li>
+ 	            <li>Results oriented</li>
+                <li>Proficiency in English and Korean</li>
+                <li>Coding History: <span id="time-container"></span> seconds!</li>
+            </ul>
+        </section>
+    </main>
+</body>
+<script>
+    const timeContainer = document.getElementById("time-container");
+    const BIRTH_DAY = "02-01-2020";
+    const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+    const intlNumberFormatter = new Intl.NumberFormat("en-US");
+
+    setInterval(() => {
+      const now = new Date();
+      const difference = Math.floor(
+        (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+      );
+
+      timeContainer.innerText = intlNumberFormatter.format(difference);
+    }, 1000);
+</script>
+</html>

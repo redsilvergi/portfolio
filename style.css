@@ -1,0 +1,181 @@
+html {
+    display: block;
+    font-size: 16px;
+}
+
+body {
+    font-family: Constantia, sans-serif;
+    margin: 3rem 25rem;
+
+}
+
+@media only screen and (max-width: 1610px) {
+    body {
+        margin: 3rem 15rem;
+    }
+}
+
+@media only screen and (max-width: 1295px) {
+    body {
+        margin: 3rem 5rem;
+    }
+}
+
+/* header */
+.header-container {
+    display: flex;
+    width: 100%;
+}
+
+.header-container h1 {
+    align-self: center;
+}
+
+.header-container img {
+    width: 6rem;
+    height: 8rem;
+    align-self: center;
+    margin: 1rem 1rem 1rem 0;
+    border-radius: 1rem;
+}
+
+nav {
+    justify-self: flex-end;
+    margin: auto;
+    margin-right: 0;
+    padding-left: 3rem;
+}
+
+
+header li {
+    display: inline-block;
+    padding: .5rem .5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: cadetblue;
+}
+
+/* education */
+#education {
+    margin-top: 2rem;
+    display: grid;
+    grid-template: 3.5rem repeat(4, 2.5rem) / 1fr 7fr;
+    grid-template-areas:
+    "education1 empty1"
+    "year2 content2"
+    "year3 content3"
+    "year4 content4"
+    "year5 content5";
+}
+
+@media only screen and (max-width: 750px) {
+    #education {
+        grid-template-rows: 3.5rem repeat(4, 4rem) ;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #education {
+        grid-template-rows: 3.5rem repeat(3, 5rem) 8rem ;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #education {
+        grid-template-rows: 3.5rem repeat(3, 8rem) 10rem ;
+    }
+}
+
+#education h2 {
+    grid-area: education1;
+}
+
+.cambridge-years {
+    grid-area: year2;
+}
+
+.cambridge {
+    grid-area: content2;
+}
+
+.abbey-years {
+    grid-area: year3;
+}
+
+.abbey {
+    grid-area: content3;
+}
+
+.foundation-years {
+    grid-area: year4;
+}
+
+.foundation {
+    grid-area: content4;
+}
+
+.kor-high-years {
+    grid-area: year5;
+}
+
+.kor-high {
+    grid-area: content5;
+}
+
+/* experience */
+main li {
+    padding: .2rem .2rem;
+}
+
+#experience {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+#experience h4 {
+    font-size: 1rem;
+    margin: auto;
+}
+
+.exp-duration {
+    font-weight: normal;
+}
+
+
+/* extra curricular activities */
+#extra-curricular {
+    margin-top: 2rem;
+}
+
+/* skills */
+#skills {
+    margin-top: 2rem;
+}
+
+#time-container {
+    color: red;
+}
+
+/* Contact */
+
+#contact {
+    margin: 2rem auto;
+}
+
+#contact p {
+    font-size: 1rem;
+}
+
+.header-p1 {
+    margin-top: 2rem;
+}
+
+#location img{
+    width: 100%;
+    margin: 1rem 0;
+}
